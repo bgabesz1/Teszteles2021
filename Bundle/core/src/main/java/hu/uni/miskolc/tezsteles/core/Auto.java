@@ -21,7 +21,7 @@ public class Auto implements HanggalRendelkezo {
 	private String modell;
 	private Integer hengerurtartalom;
 	private String rendszam;
-	private Uzemanyag uzemanyag;
+	private Valto.Uzemanyag uzemanyag;
 	private LocalDate gyartasiIdo;
 	private String szinHex;
 	private boolean korozott;
@@ -71,11 +71,11 @@ public class Auto implements HanggalRendelkezo {
 		this.rendszam = rendszam;
 	}
 
-	public Uzemanyag getUzemanyag() {
+	public Valto.Uzemanyag getUzemanyag() {
 		return uzemanyag;
 	}
 
-	public void setUzemanyag(Uzemanyag uzemanyag) {
+	public void setUzemanyag(Valto.Uzemanyag uzemanyag) {
 		this.uzemanyag = uzemanyag;
 	}
 
@@ -138,7 +138,7 @@ public class Auto implements HanggalRendelkezo {
 		}this.ajtokSzama = ajtokSzama;
 	}
 
-	public Auto(String gyarto, String modell, String hengerurtartalom, String rendszam, Uzemanyag uzemanyag,
+	public Auto(String gyarto, String modell, String hengerurtartalom, String rendszam, Valto.Uzemanyag uzemanyag,
 			LocalDate gyartasiIdo, String szinHex, boolean korozott, String forgalmiSzama, Valto valto, Kivitel kivitel,
 			int ajtokSzama) {
 		super();
